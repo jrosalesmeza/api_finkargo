@@ -37,7 +37,7 @@ set FLASK_ENV=development
 ## Base de datos
 Cree la base de datos en el motor de su preferencia y configure las credenciales de acceso de esta en el archivo **app**.
 ```sh
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:123@localhost:5432/db_finkargo'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:password@host:port/nameBaseDatos'
 ```
 Crear tablas, los siguientes comandos se debe realizar en la carpeta **src**.
 ```sh
