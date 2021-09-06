@@ -27,7 +27,7 @@ cd api_finkargo
 python -m venv env
 cd api_finkargo/env/scripts
 activate
-pip install -r requirements.txt
+pip install -r api_finkargo/src/requirements.txt
 ```
 Configurar variables de entorno.
 ```sh
