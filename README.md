@@ -31,7 +31,16 @@ Configurar variables de entorno.
 set FLASK_APP= src/app.py
 set FLASK_ENV=development
 ```
-Crear base de datos, los siguientes comandos se debe realizar en la carpeta src.
+```sh
+flask run
+127.0.0.1:5000
+```
+## Base de datos
+Cree la base de datos en el motor de su preferencia y configure las crendeciales de acceso de esta en el archivo **app**.
+```sh
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:123@localhost:5432/db_finkargo'
+```
+Crear tablas, los siguientes comandos se debe realizar en la carpeta **src**.
 ```sh
 python
 >> import app from db
@@ -48,9 +57,9 @@ https://documenter.getpostman.com/view/12949914/U16gPSUF
 
 ## Uso de Libreria
 
-- Agregar roles y nacionalidades.
-- Crear usuario Admin.
-- Consumir el resto de endpoints.
+1. Antes de crear un usuario por primera vez, es necesario agregar roles y nacionalidades.
+2. Crear usuario Admin.
+3. Consumir el resto de endpoints.
 
 ## Librerias
 
@@ -64,3 +73,4 @@ Las Librerias que se usaron en la API son:
 ## Autor
 Jose Luis Rosales Meza
 jrosalesmeza@gmail.com
+
