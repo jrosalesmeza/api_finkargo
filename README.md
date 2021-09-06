@@ -6,6 +6,9 @@
 
 El API contiene 7 endpoints y fueron desarrollados en Python bajo el entorno de trabajo Flask.
 
+## Documentación de API
+https://documenter.getpostman.com/view/12949914/U16gPSUF
+
 ## Funcionalidades
 
 - Autenticación de usarios (Basic Auth)
@@ -51,9 +54,6 @@ Correr la aplicación
 flask run
 127.0.0.1:5000
 ```
-
-## URL API
-https://documenter.getpostman.com/view/12949914/U16gPSUF
 
 ## Uso de Libreria
 
