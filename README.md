@@ -34,10 +34,6 @@ Configurar variables de entorno.
 set FLASK_APP= src/app.py
 set FLASK_ENV=development
 ```
-```sh
-flask run
-127.0.0.1:5000
-```
 ## Base de datos
 Cree la base de datos en el motor de su preferencia y configure las crendeciales de acceso de esta en el archivo **app**.
 ```sh
