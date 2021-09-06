@@ -42,7 +42,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:password@host:port/na
 Crear tablas, los siguientes comandos se debe realizar en la carpeta **src**.
 ```sh
 python
->> import app from db
+>> from app import db
 >> db.create_all()
 ```
 Correr la aplicación
