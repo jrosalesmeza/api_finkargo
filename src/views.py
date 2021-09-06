@@ -5,7 +5,6 @@ from app import app,auth,db
 from models import *
 
 
-
 @auth.verify_password #Se marca con el decorador "verify_password", el cual nos verifica si el usuario y el Password enviados son correctos y se pueda consumir las APIs
 def verify_password(username, password):
     user=User.query.filter(User.email==username).first()
@@ -184,5 +183,3 @@ def delete_user(id_user):
         return jsonify("Usuario eliminado"),200
     else:
         return jsonify({"msj":"No existe el usuario"})
-
-
